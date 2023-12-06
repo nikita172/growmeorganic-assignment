@@ -1,0 +1,18 @@
+.departTable{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.department{
+  display: flex;
+  align-items: center;
+}
+.subDepartment{
+  margin-left: 50px; 
+}
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}

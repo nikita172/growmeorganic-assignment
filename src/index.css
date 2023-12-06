@@ -1,0 +1,8 @@
+ body{
+  font-family: "Inter"
+}
+:root{
+  --blue1:rgb(56, 82, 176);
+  --blue2:rgb(32, 74, 225);
+  --gray:rgb(225, 216, 216);
+}

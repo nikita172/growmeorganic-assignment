@@ -1,0 +1,23 @@
+.departmentContainer{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.departHeading{
+background-color: var(--blue1);
+width: 100%;
+padding: 10px 0px;
+text-align: center;
+color:white;
+margin-bottom: 30px;
+}
+.errorMsg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
