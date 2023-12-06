@@ -1,4 +1,4 @@
-import { DataGrid, GridColDef, GridValueGetterParams, GridToolbar, } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridToolbar, } from '@mui/x-data-grid';
 import "./dataTable.css"
 type Props = {
   columns: GridColDef[];
