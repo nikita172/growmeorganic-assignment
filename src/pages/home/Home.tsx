@@ -41,7 +41,7 @@ const Home = () => {
     const items = JSON.parse(localStorage.getItem('growmeInfo') || '""');
     if (!items) {
       setLoading(false);
-      navigate("/login", { state: { mess: "You are not login! Please Login first" } });
+      navigate("/login", { state: { mess: "Please Login first!" } });
     }
     setLoading(false);
   }, [])

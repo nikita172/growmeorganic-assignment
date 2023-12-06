@@ -2,7 +2,7 @@ import TextField from "@mui/material/TextField";
 import "./login.css"
 import { Button } from "@mui/material";
 import Header from "../../components/header/Header";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
@@ -33,12 +33,18 @@ const Login = () => {
     }
   }, [error])
 
+
   useEffect(() => {
     if (location.state) {
       setMessage(location.state.mess);
     }
+    location.state = null;
     window.history.replaceState({}, document.title)
-  }, [])
+
+    return () => {
+      location.state = null;
+    }
+  }, [location])
 
   return (
     <>

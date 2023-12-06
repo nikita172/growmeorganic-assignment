@@ -8,12 +8,12 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
+    path: "/login",
+    element: <Login />,
   },
   {
-    path: "login",
-    element: <Login />
+    path: "/",
+    element: <Home />
   }
 ]);
 function App() {
